@@ -30,7 +30,7 @@ class _SplashState extends State<Splash> {
       backgroundColor: Colors.red,
       body: Center(
         child: Text(
-          'My App',
+          'Strell',
           style: TextStyle(
             color: Colors.white,
             fontSize: 32,
