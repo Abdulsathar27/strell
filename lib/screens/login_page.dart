@@ -1,3 +1,4 @@
+import 'package:app/constants/color_constants.dart';
 import 'package:app/widgets/login/login_page.dart';
 import 'package:flutter/material.dart';
 
@@ -18,7 +19,7 @@ class _LoginPageState extends State<LoginPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.grey[100],
+      backgroundColor: ColorConstants.backgourndcolor,
       body: const Center(
         child: SingleChildScrollView(
           padding: EdgeInsets.symmetric(horizontal: 24),

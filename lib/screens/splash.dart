@@ -1,3 +1,4 @@
+import 'package:app/constants/color_constants.dart';
 import 'package:app/screens/getstarted_page.dart';
 import 'package:flutter/material.dart';
 
@@ -27,7 +28,7 @@ class _SplashState extends State<Splash> {
   @override
   Widget build(BuildContext context) {
     return const Scaffold(
-      backgroundColor: Colors.tealAccent,
+      backgroundColor:ColorConstants.backgourndcolor,
       body: Center(
         child: Text(
           'Strell',

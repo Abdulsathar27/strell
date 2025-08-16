@@ -1,3 +1,4 @@
+import 'package:app/constants/color_constants.dart';
 import 'package:app/widgets/register/register_widget.dart';
 import 'package:flutter/material.dart';
 
@@ -17,7 +18,7 @@ class _RegisterPageState extends State<RegisterPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.grey[100],
+      backgroundColor: ColorConstants.backgourndcolor,
       appBar: AppBar(title: const Text('Register')),
       body: const Center(
         child: SingleChildScrollView(

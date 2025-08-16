@@ -1,3 +1,4 @@
+import 'package:app/constants/color_constants.dart';
 import 'package:app/widgets/otp_widgets/otp_widget.dart';
 import 'package:flutter/material.dart';
 
@@ -10,7 +11,7 @@ class OtpPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.teal[50],
+      backgroundColor:ColorConstants.backgourndcolor,
       body: SafeArea(
         child: Center(
           child: Padding(
