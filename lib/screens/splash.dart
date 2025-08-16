@@ -1,5 +1,5 @@
+import 'package:app/screens/getstarted_page.dart';
 import 'package:flutter/material.dart';
-import 'package:app/screens/login_page.dart';
 
 class Splash extends StatefulWidget {
   const Splash({super.key});
@@ -20,14 +20,14 @@ class _SplashState extends State<Splash> {
     if (!mounted) return;
     Navigator.pushReplacement(
       context,
-      MaterialPageRoute(builder: (_) => const LoginPage()),
+      MaterialPageRoute(builder: (_) => const GetStartedPage()),
     );
   }
 
   @override
   Widget build(BuildContext context) {
     return const Scaffold(
-      backgroundColor: Colors.red,
+      backgroundColor: Colors.tealAccent,
       body: Center(
         child: Text(
           'Strell',
