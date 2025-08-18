@@ -1,3 +1,5 @@
+import 'package:app/constants/color_constants.dart';
+import 'package:app/constants/size_constanst.dart';
 import 'package:flutter/material.dart';
 
 class OtpWidget extends StatefulWidget {
@@ -96,12 +98,15 @@ class _OtpWidgetState extends State<OtpWidget> {
           child: ElevatedButton(
             onPressed: _verifyOtp,
             style: ElevatedButton.styleFrom(
-              backgroundColor: Colors.teal,
+              backgroundColor: ColorConstants.backgourndbuttoncolor,
               padding: const EdgeInsets.symmetric(vertical: 14),
             ),
             child: const Text(
               "Verify",
-              style: TextStyle(fontSize: 16, color: Colors.white),
+              style: TextStyle(
+                color: ColorConstants.buttontextcolor,
+                fontSize: SizeConstants.mediumText,
+              ),
             ),
           ),
         ),
@@ -122,8 +127,7 @@ class _OtpWidgetState extends State<OtpWidget> {
               child: const Text(
                 "Resend",
                 style: TextStyle(
-                  color: Colors.teal,
-                  fontWeight: FontWeight.bold,
+                  color: ColorConstants.textcolor,
                 ),
               ),
             ),

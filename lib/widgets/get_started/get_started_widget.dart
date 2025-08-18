@@ -1,3 +1,5 @@
+import 'package:app/constants/color_constants.dart';
+import 'package:app/constants/size_constanst.dart';
 import 'package:app/screens/login_page.dart';
 import 'package:app/screens/register_page.dart';
 import 'package:flutter/material.dart';
@@ -16,6 +18,7 @@ class GetStartedWidget extends StatelessWidget {
           width: 200,
           child: OutlinedButton(
             style: OutlinedButton.styleFrom(
+              backgroundColor: ColorConstants.backgourndbuttoncolor,
               padding: const EdgeInsets.symmetric(vertical: 12),
               side: const BorderSide(color: Colors.black, width: 1),
             ),
@@ -29,7 +32,10 @@ class GetStartedWidget extends StatelessWidget {
             },
             child: const Text(
               "Sign in",
-              style: TextStyle(fontSize: 16, color: Colors.black),
+              style: TextStyle(
+                color: ColorConstants.buttontextcolor,
+                fontSize: SizeConstants.mediumText,
+              ),
             ),
           ),
         ),
@@ -41,6 +47,7 @@ class GetStartedWidget extends StatelessWidget {
           width: 200,
           child: OutlinedButton(
             style: OutlinedButton.styleFrom(
+              backgroundColor:ColorConstants.backgourndbuttoncolor ,
               padding: const EdgeInsets.symmetric(vertical: 12),
               side: const BorderSide(color: Colors.black, width: 1),
             ),
@@ -53,8 +60,12 @@ class GetStartedWidget extends StatelessWidget {
               );
             },
             child: const Text(
+              
               "Register account",
-              style: TextStyle(fontSize: 16, color: Colors.black),
+              style: TextStyle(
+                color: ColorConstants.buttontextcolor,
+                fontSize: SizeConstants.mediumText,
+              ),
             ),
           ),
         ),

@@ -19,7 +19,9 @@ class _RegisterPageState extends State<RegisterPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: ColorConstants.backgourndcolor,
-      appBar: AppBar(title: const Text('Register')),
+      appBar: AppBar(title: const Text('Register'),
+      backgroundColor:ColorConstants.backgourndcolor ,
+      ),
       body: const Center(
         child: SingleChildScrollView(
           padding: EdgeInsets.symmetric(horizontal: 24),

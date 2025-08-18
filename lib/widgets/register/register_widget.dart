@@ -1,3 +1,5 @@
+import 'package:app/constants/color_constants.dart';
+import 'package:app/constants/size_constanst.dart';
 import 'package:flutter/material.dart';
 
 class RegisterFormWidget extends StatelessWidget {
@@ -62,7 +64,18 @@ class RegisterFormWidget extends StatelessWidget {
             width: double.infinity,
             child: ElevatedButton(
               onPressed: () {},
-              child: const Text('Register'),
+              style:ElevatedButton.styleFrom(
+                backgroundColor: ColorConstants.backgourndbuttoncolor,
+                padding: const EdgeInsets.symmetric(vertical: 14),
+              ) ,
+              child: const Text('Register',
+              style: TextStyle(
+                color: ColorConstants.buttontextcolor,
+                fontSize: SizeConstants.mediumText,
+
+              ),
+              
+              ),
             ),
           ),
         ],

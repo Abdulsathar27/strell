@@ -1,3 +1,5 @@
+import 'package:app/constants/color_constants.dart';
+import 'package:app/constants/size_constanst.dart';
 import 'package:flutter/material.dart';
 import 'package:app/screens/register_page.dart';
 import 'package:app/screens/otp_page.dart';
@@ -79,16 +81,32 @@ class _LoginFormWidgetState extends State<LoginFormWidget> {
             width: double.infinity,
             child: ElevatedButton(
               onPressed: _login,
-              child: const Text('Login'),
+              style: ElevatedButton.styleFrom(
+                backgroundColor: ColorConstants.backgourndbuttoncolor,
+                padding: const EdgeInsets.symmetric(vertical: 14),
+                foregroundColor: ColorConstants.textcolor,
+              ) ,
+              child: const Text('Login',
+              style: TextStyle(
+                color: ColorConstants.buttontextcolor,
+                fontSize: SizeConstants.mediumText,
+              ),
+              ),
             ),
           ),
 
           TextButton(
+            style:TextButton.styleFrom(
+              foregroundColor: ColorConstants.textcolor,
+            ),
             onPressed: () {},
             child: const Text('Forgot password?'),
           ),
 
           TextButton(
+            style: TextButton.styleFrom(
+              foregroundColor: ColorConstants.textcolor
+            ),
             onPressed: () {
               Navigator.push(
                 context,
